@@ -1,4 +1,4 @@
-var dateDisplayEl = $('#currentDay');
 
+// adds current day to top of calendar
 var rightNow = moment().format('dddd, MMMM Do');
-dateDisplayEl.text(rightNow);
+$('#currentDay').text(rightNow);
