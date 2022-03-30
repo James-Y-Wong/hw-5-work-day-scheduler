@@ -49,7 +49,23 @@ var taskText4 = $('#4user-input');
 var saveBtn5 = $('#5button-addon2');
 var taskText5 = $('#5user-input');
 
+function init() {
+    renderSavedTask();
+}
 
+
+function renderSavedTask() {
+    $('#8user-input').text(localStorage.getItem("8"));
+    $('#9user-input').text(localStorage.getItem("9"));
+    $('#10user-input').text(localStorage.getItem("10"));
+    $('#11user-input').text(localStorage.getItem("11"));
+    $('#12user-input').text(localStorage.getItem("12"));
+    $('#1user-input').text(localStorage.getItem("1"));
+    $('#2user-input').text(localStorage.getItem("2"));
+    $('#3user-input').text(localStorage.getItem("3"));
+    $('#4user-input').text(localStorage.getItem("4"));
+    $('#5user-input').text(localStorage.getItem("5"));
+}
 
 function saveTask8() {
     localStorage.setItem("8", taskText8.val());
@@ -81,6 +97,8 @@ function saveTask4() {
 function saveTask5() {
     localStorage.setItem("5", taskText5.val());
 }
+
+console.log(localStorage.getItem("8"))
 
 saveBtn8.on("click", function() {
     saveTask8();
@@ -121,3 +139,5 @@ saveBtn4.on("click", function() {
 saveBtn5.on("click", function() {
     saveTask5();
 })
+
+init();
