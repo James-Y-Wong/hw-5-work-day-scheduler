@@ -1,8 +1,4 @@
 
-// adds current day to top of calendar
-var rightNow = moment().format('dddd, MMMM Do');
-$('#currentDay').text(rightNow);
-
 // var calendarTime = moment("8", "HH:mm").format("H A");
 // console.log(calendarTime);
 
@@ -28,6 +24,11 @@ $('#currentDay').text(rightNow);
 // }
 
 // check()
+
+// adds currenty day to top of calendar
+var rightNow = moment().format('dddd, MMMM Do');
+$('#currentDay').text(rightNow);
+
 var saveBtn8 = $('#8button-addon2');
 var taskText8 = $('#8user-input');
 var saveBtn9 = $('#9button-addon2');
