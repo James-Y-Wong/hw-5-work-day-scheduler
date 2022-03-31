@@ -33,7 +33,6 @@ var plannerTime3 = moment("15", "HH:mm").format("h A");
 var plannerTime4 = moment("16", "HH:mm").format("h A");
 var plannerTime5 = moment("17", "HH:mm").format("h A");
 var currentTime = moment().format("h A");
-console.log(currentTime);
 
 function init() {
     renderSavedTask();
@@ -48,6 +47,12 @@ function init() {
     timeComparison4();
     timeComparison5();
 }
+
+function timedRefresh(timeoutPeriod) {
+    setTimeout('location.reload(true);', timeoutPeriod);
+}
+
+window.onload = timedRefresh(60000);
 
 function timeComparison8() {
     if (currentTime < plannerTime8) {
