@@ -2,6 +2,7 @@
 var rightNow = moment().format('dddd, MMMM Do');
 $('#currentDay').text(rightNow);
 
+// grabs elements from index.html
 var saveBtn8 = $('#8button-addon2');
 var taskText8 = $('#8user-input');
 var saveBtn9 = $('#9button-addon2');
@@ -22,6 +23,8 @@ var saveBtn4 = $('#4button-addon2');
 var taskText4 = $('#4user-input');
 var saveBtn5 = $('#5button-addon2');
 var taskText5 = $('#5user-input');
+
+// formats each timeblock
 var plannerTime8 = moment("8", "HH:mm").format("h A");
 var plannerTime9 = moment("9", "HH:mm").format("h A");
 var plannerTime10 = moment("10", "HH:mm").format("h A");
@@ -34,6 +37,7 @@ var plannerTime4 = moment("16", "HH:mm").format("h A");
 var plannerTime5 = moment("17", "HH:mm").format("h A");
 var currentTime = moment().format("h A");
 
+// function fires on reload
 function init() {
     renderSavedTask();
     timeComparison8();
@@ -48,12 +52,14 @@ function init() {
     timeComparison5();
 }
 
+// auto refresh function to make sure the color coding is live
 function timedRefresh(timeoutPeriod) {
     setTimeout('location.reload(true);', timeoutPeriod);
 }
 
 window.onload = timedRefresh(60000);
 
+// function for color coding timeblocks. Will be called in the init() 
 function timeComparison8() {
     if (currentTime < plannerTime8) {
         $('#8user-input').css("background-color", "#d3d3d3");
@@ -71,6 +77,7 @@ function timeComparison8() {
     }   $('#8user-input').css("border", "grey 1px solid");
 }
 
+// function for color coding timeblocks. Will be called in the init() 
 function timeComparison9() {
     if (currentTime < plannerTime9) {
         $('#9user-input').css("background-color", "#d3d3d3");
@@ -89,6 +96,7 @@ function timeComparison9() {
     }
 }
 
+// function for color coding timeblocks. Will be called in the init() 
 function timeComparison10() {
     if (currentTime > plannerTime10) {
         $('#10user-input').css("background-color", "#d3d3d3");
@@ -107,6 +115,7 @@ function timeComparison10() {
     }
 }
 
+// function for color coding timeblocks. Will be called in the init()
 function timeComparison11() {
     if (currentTime > plannerTime11) {
         $('#11user-input').css("background-color", "#d3d3d3");
@@ -125,6 +134,7 @@ function timeComparison11() {
     }
 }
 
+// function for color coding timeblocks. Will be called in the init()
 function timeComparison12() {
     if (currentTime > plannerTime12) {
         $('#12user-input').css("background-color", "#d3d3d3");
@@ -142,6 +152,8 @@ function timeComparison12() {
         $('#12user-input').css("border", "grey 1px solid");
     }
 }
+
+// function for color coding timeblocks. Will be called in the init()
 function timeComparison1() {
     if (currentTime > plannerTime1) {
         $('#1user-input').css("background-color", "#d3d3d3");
@@ -160,6 +172,7 @@ function timeComparison1() {
     }
 }
 
+// function for color coding timeblocks. Will be called in the init()
 function timeComparison2() {
     if (currentTime > plannerTime2) {
         $('#2user-input').css("background-color", "#d3d3d3");
@@ -178,6 +191,7 @@ function timeComparison2() {
     }
 }
 
+// function for color coding timeblocks. Will be called in the init()
 function timeComparison3() {
     if (currentTime > plannerTime3) {
         $('#3user-input').css("background-color", "#d3d3d3");
@@ -196,6 +210,7 @@ function timeComparison3() {
     }
 }
 
+// function for color coding timeblocks. Will be called in the init()
 function timeComparison4() {
     if (currentTime > plannerTime4) {
         $('#4user-input').css("background-color", "#d3d3d3");
@@ -214,6 +229,7 @@ function timeComparison4() {
     }
 }
 
+// function for color coding timeblocks. Will be called in the init()
 function timeComparison5() {
     if (currentTime > plannerTime5) {
         $('#5user-input').css("background-color", "#d3d3d3");
@@ -233,7 +249,7 @@ function timeComparison5() {
 }
 
 
-
+// function to be called by init(). renders saved tasks from local storage to page even if refreshing page
 function renderSavedTask() {
     $('#8user-input').text(localStorage.getItem("8"));
     $('#9user-input').text(localStorage.getItem("9"));
@@ -247,77 +263,107 @@ function renderSavedTask() {
     $('#5user-input').text(localStorage.getItem("5"));
 }
 
+// function to be called by submitBtn. Saves tasks to local storage
 function saveTask8() {
     localStorage.setItem("8", taskText8.val());
 }
+
+// function to be called by submitBtn. Saves tasks to local storage
 function saveTask9() {
     localStorage.setItem("9", taskText9.val());
 }
+
+// function to be called by submitBtn. Saves tasks to local storage
 function saveTask10() {
     localStorage.setItem("10", taskText10.val());
 }
+
+// function to be called by submitBtn. Saves tasks to local storage
 function saveTask11() {
     localStorage.setItem("11", taskText11.val());
 }
+
+// function to be called by submitBtn. Saves tasks to local storage
 function saveTask12() {
     localStorage.setItem("12", taskText12.val());
 }
+
+// function to be called by submitBtn. Saves tasks to local storage
 function saveTask1() {
     localStorage.setItem("1", taskText1.val());
 }
+
+// function to be called by submitBtn. Saves tasks to local storage
 function saveTask2() {
     localStorage.setItem("2", taskText2.val());
 }
+
+// function to be called by submitBtn. Saves tasks to local storage
 function saveTask3() {
     localStorage.setItem("3", taskText3.val());
 }
+
+// function to be called by submitBtn. Saves tasks to local storage
 function saveTask4() {
     localStorage.setItem("4", taskText4.val());
 }
+
+// function to be called by submitBtn. Saves tasks to local storage
 function saveTask5() {
     localStorage.setItem("5", taskText5.val());
 }
 
+// event listener to save tasks to local storage on click
 saveBtn8.on("click", function() {
     saveTask8();
 })
 
+// event listener to save tasks to local storage on click
 saveBtn9.on("click", function() {
     saveTask9();
 })
  
+// event listener to save tasks to local storage on click
 saveBtn10.on("click", function() {
     saveTask10();
 })
 
+// event listener to save tasks to local storage on click
 saveBtn11.on("click", function() {
     saveTask11();
 })
 
+// event listener to save tasks to local storage on click
 saveBtn12.on("click", function() {
     saveTask12();
 })
 
+// event listener to save tasks to local storage on click
 saveBtn1.on("click", function() {
     saveTask1();
 })
 
+// event listener to save tasks to local storage on click
 saveBtn2.on("click", function() {
     saveTask2();
 })
 
+// event listener to save tasks to local storage on click
 saveBtn3.on("click", function() {
     saveTask3();
 })
 
+// event listener to save tasks to local storage on click
 saveBtn4.on("click", function() {
     saveTask4();
 })
 
+// event listener to save tasks to local storage on click
 saveBtn5.on("click", function() {
     saveTask5();
 })
 
+// populates each timeblock with the formatted time
 $('#planner-time8').text(plannerTime8);
 $('#planner-time9').text(plannerTime9);
 $('#planner-time10').text(plannerTime10);
