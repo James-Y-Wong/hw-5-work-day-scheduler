@@ -32,10 +32,201 @@ var plannerTime2 = moment("14", "HH:mm").format("h A");
 var plannerTime3 = moment("15", "HH:mm").format("h A");
 var plannerTime4 = moment("16", "HH:mm").format("h A");
 var plannerTime5 = moment("17", "HH:mm").format("h A");
+var currentTime = moment().format("h A");
+console.log(currentTime);
 
 function init() {
     renderSavedTask();
+    timeComparison8();
+    timeComparison9();
+    timeComparison10();
+    timeComparison11();
+    timeComparison12();
+    timeComparison1();
+    timeComparison2();
+    timeComparison3();
+    timeComparison4();
+    timeComparison5();
 }
+
+function timeComparison8() {
+    if (currentTime < plannerTime8) {
+        $('#8user-input').css("background-color", "#d3d3d3");
+        $('#8user-input').css("color", "white");
+        $('#8user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime == plannerTime8) {
+        $('#8user-input').css("background-color", "#ff6961");
+        $('#8user-input').css("color", "white");
+        $('#8user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime > plannerTime8) {
+        $('#8user-input').css("background-color", "#77dd77");
+        $('#8user-input').css("color", "white");
+    }   $('#8user-input').css("border", "grey 1px solid");
+}
+
+function timeComparison9() {
+    if (currentTime < plannerTime9) {
+        $('#9user-input').css("background-color", "#d3d3d3");
+        $('#9user-input').css("color", "white");
+        $('#9user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime == plannerTime9) {
+        $('#9user-input').css("background-color", "#ff6961");
+        $('#9user-input').css("color", "white");
+        $('#9user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime > plannerTime9) {
+        $('#9user-input').css("background-color", "#77dd77");
+        $('#9user-input').css("color", "white");
+        $('#9user-input').css("border", "grey 1px solid");
+    }
+}
+
+function timeComparison10() {
+    if (currentTime > plannerTime10) {
+        $('#10user-input').css("background-color", "#d3d3d3");
+        $('#10user-input').css("color", "white");
+        $('#10user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime == plannerTime10) {
+        $('#10user-input').css("background-color", "#ff6961");
+        $('#10user-input').css("color", "white");
+        $('#10user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime < plannerTime10) {
+        $('#10user-input').css("background-color", "#77dd77");
+        $('#10user-input').css("color", "white");
+        $('#10user-input').css("border", "grey 1px solid");
+    }
+}
+
+function timeComparison11() {
+    if (currentTime > plannerTime11) {
+        $('#11user-input').css("background-color", "#d3d3d3");
+        $('#11user-input').css("color", "white");
+        $('#11user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime == plannerTime11) {
+        $('#11user-input').css("background-color", "#ff6961");
+        $('#11user-input').css("color", "white");
+        $('#11user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime < plannerTime11) {
+        $('#11user-input').css("background-color", "#77dd77");
+        $('#11user-input').css("color", "white");
+        $('#11user-input').css("border", "grey 1px solid");
+    }
+}
+
+function timeComparison12() {
+    if (currentTime > plannerTime12) {
+        $('#12user-input').css("background-color", "#d3d3d3");
+        $('#12user-input').css("color", "white");
+        $('#12user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime == plannerTime12) {
+        $('#12user-input').css("background-color", "#ff6961");
+        $('#12user-input').css("color", "white");
+        $('#12user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime < plannerTime12) {
+        $('#12user-input').css("background-color", "#77dd77");
+        $('#12user-input').css("color", "white");
+        $('#12user-input').css("border", "grey 1px solid");
+    }
+}
+function timeComparison1() {
+    if (currentTime > plannerTime1) {
+        $('#1user-input').css("background-color", "#d3d3d3");
+        $('#1user-input').css("color", "white");
+        $('#1user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime == plannerTime1) {
+        $('#1user-input').css("background-color", "#ff6961");
+        $('#1user-input').css("color", "white");
+        $('#1user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime < plannerTime1) {
+        $('#1user-input').css("background-color", "#77dd77");
+        $('#1user-input').css("color", "white");
+        $('#1user-input').css("border", "grey 1px solid");
+    }
+}
+
+function timeComparison2() {
+    if (currentTime > plannerTime2) {
+        $('#2user-input').css("background-color", "#d3d3d3");
+        $('#2user-input').css("color", "white");
+        $('#2user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime == plannerTime2) {
+        $('#2user-input').css("background-color", "#ff6961");
+        $('#2user-input').css("color", "white");
+        $('#2user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime < plannerTime2) {
+        $('#2user-input').css("background-color", "#77dd77");
+        $('#2user-input').css("color", "white");
+        $('#2user-input').css("border", "grey 1px solid");
+    }
+}
+
+function timeComparison3() {
+    if (currentTime > plannerTime3) {
+        $('#3user-input').css("background-color", "#d3d3d3");
+        $('#3user-input').css("color", "white");
+        $('#3user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime == plannerTime3) {
+        $('#3user-input').css("background-color", "#ff6961");
+        $('#3user-input').css("color", "white");
+        $('#3user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime < plannerTime3) {
+        $('#3user-input').css("background-color", "#77dd77");
+        $('#3user-input').css("color", "white");
+        $('#3user-input').css("border", "grey 1px solid");
+    }
+}
+
+function timeComparison4() {
+    if (currentTime > plannerTime4) {
+        $('#4user-input').css("background-color", "#d3d3d3");
+        $('#4user-input').css("color", "white");
+        $('#4user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime == plannerTime4) {
+        $('#4user-input').css("background-color", "#ff6961");
+        $('#4user-input').css("color", "white");
+        $('#4user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime < plannerTime4) {
+        $('#4user-input').css("background-color", "#77dd77");
+        $('#4user-input').css("color", "white");
+        $('#4user-input').css("border", "grey 1px solid");
+    }
+}
+
+function timeComparison5() {
+    if (currentTime > plannerTime5) {
+        $('#5user-input').css("background-color", "#d3d3d3");
+        $('#5user-input').css("color", "white");
+        $('#5user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime == plannerTime5) {
+        $('#5user-input').css("background-color", "#ff6961");
+        $('#5user-input').css("color", "white");
+        $('#5user-input').css("border", "grey 1px solid");
+    } 
+    if (currentTime < plannerTime5) {
+        $('#5user-input').css("background-color", "#77dd77");
+        $('#5user-input').css("color", "white");
+        $('#5user-input').css("border", "grey 1px solid");
+    }
+}
+
 
 
 function renderSavedTask() {
@@ -132,36 +323,5 @@ $('#planner-time2').text(plannerTime2);
 $('#planner-time3').text(plannerTime3);
 $('#planner-time4').text(plannerTime4);
 $('#planner-time5').text(plannerTime5);
-
-
-
-
-
-
-
-
-
-// var currentTime = moment().format("H");
-// console.log(currentTime);
-
-// var timeblock8 = document.querySelector('#time8');
-// console.log(timeblock8.textContent);
-// var time8 = moment("timeblock8.textContent", "h").format("H");
-// console.log(time8);
-
-// var timeblockText = timeblock8.textContent;
-
-// function check() {
-//     if (currentTime > time8) {
-//         console.log("true");
-//     } 
-//     if (currentTime == time8) {
-//         console.log("same"); 
-//     } else {
-//         console.log("false");
-//     }
-// }
-
-// check()
 
 init();
