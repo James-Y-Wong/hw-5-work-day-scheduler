@@ -25,7 +25,7 @@ var saveBtn5 = $('#5button-addon2');
 var taskText5 = $('#5user-input');
 
 // formats each timeblock
-var plannerTime8 = moment("8", "HH:mm").format("h A");
+var plannerTime8 = moment("8", "h").format("h A");
 var plannerTime9 = moment("9", "HH:mm").format("h A");
 var plannerTime10 = moment("10", "HH:mm").format("h A");
 var plannerTime11 = moment("11", "HH:mm").format("h A");
@@ -35,7 +35,31 @@ var plannerTime2 = moment("14", "HH:mm").format("h A");
 var plannerTime3 = moment("15", "HH:mm").format("h A");
 var plannerTime4 = moment("16", "HH:mm").format("h A");
 var plannerTime5 = moment("17", "HH:mm").format("h A");
-var currentTime = moment().format("h A");
+var currentTime = moment().format("H");
+
+
+var currentTime8 = "08";
+var currentTime9 = "09";
+var currentTime10 = "10";
+var currentTime11 = "11";
+var currentTime12 = "12";
+var currentTime1 = "13";
+var currentTime2 = "14";
+var currentTime3 = "15";
+var currentTime4 = "16";
+var currentTime5 = "17";
+
+console.log(currentTime)
+console.log(currentTime8)
+
+if (currentTime12 > currentTime) {
+    console.log("true");
+} if (currentTime12 === currentTime) {
+    console.log("same");
+} else {
+    console.log("false");
+}
+
 
 // function fires on reload
 function init() {
@@ -61,35 +85,36 @@ window.onload = timedRefresh(60000);
 
 // function for color coding timeblocks. Will be called in the init() 
 function timeComparison8() {
-    if (currentTime < plannerTime8) {
+    if (currentTime8 < currentTime) {
         $('#8user-input').css("background-color", "#d3d3d3");
         $('#8user-input').css("color", "white");
         $('#8user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime == plannerTime8) {
+    if (currentTime8 === currentTime) {
         $('#8user-input').css("background-color", "#ff6961");
         $('#8user-input').css("color", "white");
         $('#8user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime > plannerTime8) {
+    if (currentTime8 > currentTime) {
         $('#8user-input').css("background-color", "#77dd77");
         $('#8user-input').css("color", "white");
-    }   $('#8user-input').css("border", "grey 1px solid");
+        $('#8user-input').css("border", "grey 1px solid");
+    }
 }
 
 // function for color coding timeblocks. Will be called in the init() 
 function timeComparison9() {
-    if (currentTime < plannerTime9) {
+    if (currentTime9 < currentTime) {
         $('#9user-input').css("background-color", "#d3d3d3");
         $('#9user-input').css("color", "white");
         $('#9user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime == plannerTime9) {
+    if (currentTime9 === currentTime) {
         $('#9user-input').css("background-color", "#ff6961");
         $('#9user-input').css("color", "white");
         $('#9user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime > plannerTime9) {
+    if (currentTime9 > currentTime) {
         $('#9user-input').css("background-color", "#77dd77");
         $('#9user-input').css("color", "white");
         $('#9user-input').css("border", "grey 1px solid");
@@ -98,17 +123,17 @@ function timeComparison9() {
 
 // function for color coding timeblocks. Will be called in the init() 
 function timeComparison10() {
-    if (currentTime > plannerTime10) {
+    if (currentTime10 < currentTime) {
         $('#10user-input').css("background-color", "#d3d3d3");
         $('#10user-input').css("color", "white");
         $('#10user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime == plannerTime10) {
+    if (currentTime10 === currentTime) {
         $('#10user-input').css("background-color", "#ff6961");
         $('#10user-input').css("color", "white");
         $('#10user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime < plannerTime10) {
+    if (currentTime10 > currentTime) {
         $('#10user-input').css("background-color", "#77dd77");
         $('#10user-input').css("color", "white");
         $('#10user-input').css("border", "grey 1px solid");
@@ -117,17 +142,17 @@ function timeComparison10() {
 
 // function for color coding timeblocks. Will be called in the init()
 function timeComparison11() {
-    if (currentTime > plannerTime11) {
+    if (currentTime11 < currentTime) {
         $('#11user-input').css("background-color", "#d3d3d3");
         $('#11user-input').css("color", "white");
         $('#11user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime == plannerTime11) {
+    if (currentTime11 === currentTime) {
         $('#11user-input').css("background-color", "#ff6961");
         $('#11user-input').css("color", "white");
         $('#11user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime < plannerTime11) {
+    if (currentTime11 > currentTime) {
         $('#11user-input').css("background-color", "#77dd77");
         $('#11user-input').css("color", "white");
         $('#11user-input').css("border", "grey 1px solid");
@@ -136,17 +161,17 @@ function timeComparison11() {
 
 // function for color coding timeblocks. Will be called in the init()
 function timeComparison12() {
-    if (currentTime > plannerTime12) {
+    if (currentTime12 < currentTime) {
         $('#12user-input').css("background-color", "#d3d3d3");
         $('#12user-input').css("color", "white");
         $('#12user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime == plannerTime12) {
+    if (currentTime12 === currentTime) {
         $('#12user-input').css("background-color", "#ff6961");
         $('#12user-input').css("color", "white");
         $('#12user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime < plannerTime12) {
+    if (currentTime12 > currentTime) {
         $('#12user-input').css("background-color", "#77dd77");
         $('#12user-input').css("color", "white");
         $('#12user-input').css("border", "grey 1px solid");
@@ -155,17 +180,17 @@ function timeComparison12() {
 
 // function for color coding timeblocks. Will be called in the init()
 function timeComparison1() {
-    if (currentTime > plannerTime1) {
+    if (currentTime1 < currentTime) {
         $('#1user-input').css("background-color", "#d3d3d3");
         $('#1user-input').css("color", "white");
         $('#1user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime == plannerTime1) {
+    if (currentTime1 === currentTime) {
         $('#1user-input').css("background-color", "#ff6961");
         $('#1user-input').css("color", "white");
         $('#1user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime < plannerTime1) {
+    if (currentTime1 > currentTime) {
         $('#1user-input').css("background-color", "#77dd77");
         $('#1user-input').css("color", "white");
         $('#1user-input').css("border", "grey 1px solid");
@@ -174,17 +199,17 @@ function timeComparison1() {
 
 // function for color coding timeblocks. Will be called in the init()
 function timeComparison2() {
-    if (currentTime > plannerTime2) {
+    if (currentTime2 < currentTime) {
         $('#2user-input').css("background-color", "#d3d3d3");
         $('#2user-input').css("color", "white");
         $('#2user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime == plannerTime2) {
+    if (currentTime2 === currentTime) {
         $('#2user-input').css("background-color", "#ff6961");
         $('#2user-input').css("color", "white");
         $('#2user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime < plannerTime2) {
+    if (currentTime2 > currentTime) {
         $('#2user-input').css("background-color", "#77dd77");
         $('#2user-input').css("color", "white");
         $('#2user-input').css("border", "grey 1px solid");
@@ -193,17 +218,17 @@ function timeComparison2() {
 
 // function for color coding timeblocks. Will be called in the init()
 function timeComparison3() {
-    if (currentTime > plannerTime3) {
+    if (currentTime3 < currentTime) {
         $('#3user-input').css("background-color", "#d3d3d3");
         $('#3user-input').css("color", "white");
         $('#3user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime == plannerTime3) {
+    if (currentTime3 === currentTime) {
         $('#3user-input').css("background-color", "#ff6961");
         $('#3user-input').css("color", "white");
         $('#3user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime < plannerTime3) {
+    if (currentTime3 > currentTime) {
         $('#3user-input').css("background-color", "#77dd77");
         $('#3user-input').css("color", "white");
         $('#3user-input').css("border", "grey 1px solid");
@@ -212,17 +237,17 @@ function timeComparison3() {
 
 // function for color coding timeblocks. Will be called in the init()
 function timeComparison4() {
-    if (currentTime > plannerTime4) {
+    if (currentTime4 < currentTime) {
         $('#4user-input').css("background-color", "#d3d3d3");
         $('#4user-input').css("color", "white");
         $('#4user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime == plannerTime4) {
+    if (currentTime4 === currentTime) {
         $('#4user-input').css("background-color", "#ff6961");
         $('#4user-input').css("color", "white");
         $('#4user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime < plannerTime4) {
+    if (currentTime4 > currentTime) {
         $('#4user-input').css("background-color", "#77dd77");
         $('#4user-input').css("color", "white");
         $('#4user-input').css("border", "grey 1px solid");
@@ -231,17 +256,17 @@ function timeComparison4() {
 
 // function for color coding timeblocks. Will be called in the init()
 function timeComparison5() {
-    if (currentTime > plannerTime5) {
+    if (currentTime5 < currentTime) {
         $('#5user-input').css("background-color", "#d3d3d3");
         $('#5user-input').css("color", "white");
         $('#5user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime == plannerTime5) {
+    if (currentTime5 === currentTime) {
         $('#5user-input').css("background-color", "#ff6961");
         $('#5user-input').css("color", "white");
         $('#5user-input').css("border", "grey 1px solid");
     } 
-    if (currentTime < plannerTime5) {
+    if (currentTime5 > currentTime) {
         $('#5user-input').css("background-color", "#77dd77");
         $('#5user-input').css("color", "white");
         $('#5user-input').css("border", "grey 1px solid");
