@@ -35,7 +35,7 @@ var plannerTime2 = moment("14", "HH:mm").format("h A");
 var plannerTime3 = moment("15", "HH:mm").format("h A");
 var plannerTime4 = moment("16", "HH:mm").format("h A");
 var plannerTime5 = moment("17", "HH:mm").format("h A");
-var currentTime = moment().format("H");
+var currentTime = moment().format("HH");
 
 
 var currentTime8 = "08";
@@ -50,7 +50,7 @@ var currentTime4 = "16";
 var currentTime5 = "17";
 
 console.log(currentTime)
-console.log(currentTime8)
+console.log(currentTime9)
 
 if (currentTime12 > currentTime) {
     console.log("true");
