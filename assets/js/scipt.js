@@ -35,9 +35,11 @@ var plannerTime2 = moment("14", "HH:mm").format("h A");
 var plannerTime3 = moment("15", "HH:mm").format("h A");
 var plannerTime4 = moment("16", "HH:mm").format("h A");
 var plannerTime5 = moment("17", "HH:mm").format("h A");
+
+// sets current time format
 var currentTime = moment().format("HH");
 
-
+// sets the time in military time for comparison to current time
 var currentTime8 = "08";
 var currentTime9 = "09";
 var currentTime10 = "10";
@@ -48,18 +50,6 @@ var currentTime2 = "14";
 var currentTime3 = "15";
 var currentTime4 = "16";
 var currentTime5 = "17";
-
-console.log(currentTime)
-console.log(currentTime9)
-
-if (currentTime12 > currentTime) {
-    console.log("true");
-} if (currentTime12 === currentTime) {
-    console.log("same");
-} else {
-    console.log("false");
-}
-
 
 // function fires on reload
 function init() {
