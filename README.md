@@ -27,7 +27,7 @@ The below picture is the final result. Screenshot was taken at 10:12 AM
 >- When the time is current, timeblock will be red
 >- When the time is in the future, timeblocks will be green
 >
->![This is a screenshot of the final result of the Work Day Scheduler](./assets/image/work-day-scheduler-screenshot.png))
+>![This is a screenshot of the final result of the Work Day Scheduler](./assets/image/work-day-scheduler-screenshot.png)
 
 ## Languages Used
 
