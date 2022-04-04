@@ -18,7 +18,7 @@ The purpose of this project is to build a work day scheduler using all the knowl
 
 ## Result
 
-The below picture is the final result.
+The below picture is the final result. Screenshot was taken at 10:12 AM
 
 >The Work Day Scheduler displays the current date on the top. You are able to enter tasks into each timeblock text area and save to local storage. When the page refreshes, the saved text will remain.
 >
@@ -27,7 +27,7 @@ The below picture is the final result.
 >- When the time is current, timeblock will be red
 >- When the time is in the future, timeblocks will be green
 >
->![This is a screenshot of the final result of the Work Day Scheduler](./assets/image/work-day-scheduler-screenshot.png)
+>![This is a screenshot of the final result of the Work Day Scheduler](./assets/image/work-day-scheduler-screenshot.png))
 
 ## Languages Used
 
