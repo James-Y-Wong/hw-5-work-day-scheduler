@@ -46,3 +46,11 @@ The below picture is the final result. Screenshot was taken at 10:12 AM
 ## Link To Deployed Page
 
 - [Work Day Scheduler](https://james-y-wong.github.io/hw-5-work-day-scheduler/)
+
+## Contact Information
+
+- Email: jamesyeuwong@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/james-wong-90652497)
+- [GitHub](https://github.com/James-Y-Wong)
+
+
